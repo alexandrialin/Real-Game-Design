@@ -30,7 +30,7 @@ public class McHp : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("body"))
             {
-                OverallHP.hp -= 20;
+                hp -= 20;
                 if (squealCooldown <= 0)
                 {
                     Instantiate(squeal);
