@@ -11,7 +11,10 @@ public class McHp : MonoBehaviour
     public float squealCooldown;
     public string type;
     public float dmgCooldown = 0f;
-
+    public static int full = 200;
+    public static int hp = full;
+    public Text hpText;
+    public GameObject deathScreen;
 
 
 
@@ -25,7 +28,7 @@ public class McHp : MonoBehaviour
 
         if (dmgCooldown <= 0)
         {
-            if (collision.gameObject.CompareTag("body") || collision.gameObject.CompareTag("3fires"))
+            if (collision.gameObject.CompareTag("body"))
             {
                 OverallHP.hp -= 20;
                 if (squealCooldown <= 0)
@@ -34,46 +37,19 @@ public class McHp : MonoBehaviour
                 }
                 squealCooldown = 1f;
             }
-            if (collision.gameObject.CompareTag("hit"))
-            {
-                OverallHP.hp -= 5;
-                if (squealCooldown <= 0)
-                {
-                    Instantiate(squeal);
-                }
-                squealCooldown = 1f;
-            }
-            if (collision.gameObject.CompareTag("water"))
-            {
-                print("working");
-                OverallHP.hp = 0;
-                if (squealCooldown <= 0)
-                {
-                    Instantiate(squeal);
-                }
-                squealCooldown = 1f;
-
-            }
-            if (collision.gameObject.CompareTag("boss"))
-            {
-                OverallHP.hp -= Random.Range(10, 30);
-                if (squealCooldown <= 0)
-                {
-                    Instantiate(squeal);
-                }
-                squealCooldown = 1f;
-            }
-            if(collision.gameObject.CompareTag("cutscene"))
-            {
-                SceneManager.LoadScene("BossLevel2");
-            }
 
         }
         dmgCooldown = 1f;
     }
     void Update()
     {
-        if(squealCooldown > 0)
+        hpText.text = hp + "/" + full;
+        if (hp <= 0)
+        {
+            deathScreen.SetActive(true);
+
+        }
+        if (squealCooldown > 0)
         {
             squealCooldown -= Time.deltaTime;
         }
