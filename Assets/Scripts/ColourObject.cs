@@ -10,6 +10,8 @@ public class ColourObject : MonoBehaviour
     // The capsule object that will display the mixed color
     public GameObject capsule;
 
+    public GameObject walls;
+
     public GoalColourObject goalObject;
 
     // Whether or not this color object is currently added to the capsule
@@ -52,12 +54,13 @@ public class ColourObject : MonoBehaviour
         if (capsule.GetComponent<Renderer>().material.color == goalColorWithAlpha)
         {
             // Trigger the event for matching the goal color
-            OnGoalColorMatched();
+            Invoke("OnGoalColorMatched", 1.0f);
         }
     }
 
     void OnGoalColorMatched()
     {
         Debug.Log("Goal color matched!");
+        walls.SetActive(false);
     }
 }
