@@ -13,10 +13,11 @@ public class EnemyCode : MonoBehaviour
     public Animator anim;
     public float distance;
     public Text hpText;
-    public int hp = 100;
+    public int hp;
+    public int full;
     public Text dmgText;
     public int dmg;
-  
+    public int enemyType;
     public float lag = 0;
     public float enemyLag = 0;
     public float cooldown = 0;
@@ -37,6 +38,8 @@ public class EnemyCode : MonoBehaviour
     void Start()
     {
         GetPlayerTransform();
+        full = hp;
+        hpText.text = hp + "/" + full;
 
     }
 
@@ -79,7 +82,7 @@ public class EnemyCode : MonoBehaviour
         if (hp <= 0)
         {
             hp = 0;
-            hpText.text = "0/100";
+            hpText.text = "0/" + full;
             anim.SetInteger("attack", 4);
             alive = false;
         }
@@ -89,6 +92,20 @@ public class EnemyCode : MonoBehaviour
         }
         else if (deathTime <= 0)
         {
+            if(enemyType == 1)
+            {
+                CourageGame.enemies1++;
+            }
+
+            if (enemyType == 2)
+            {
+                CourageGame.enemies2++;
+            }
+
+            if (enemyType == 3)
+            {
+                CourageGame.enemies3++;
+            }
             Destroy(gameObject);
         }
         GetPlayerTransform();
@@ -100,7 +117,7 @@ public class EnemyCode : MonoBehaviour
         {
             anim.SetInteger("attack", 3);
             dmg = Random.Range(10, 20);
-            hpText.text = hp - dmg + "/100";
+            hpText.text = hp - dmg + "/" + full;
             hp -= dmg;
             dmgTime = 1f;
         }
