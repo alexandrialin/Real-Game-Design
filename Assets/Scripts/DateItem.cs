@@ -9,11 +9,7 @@ public class DateItem : MonoBehaviour
 
     public DatePuzzleManager manager;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public TextDisplay textDisplay;
 
     void OnTriggerEnter(Collider other)
     {
@@ -26,6 +22,7 @@ public class DateItem : MonoBehaviour
         else
         {
             Debug.Log("Incorrect");
+            textDisplay.DisplayTextIndex(2);
             manager.ResetItems();
         }
     }
