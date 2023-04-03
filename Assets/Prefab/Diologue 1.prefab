@@ -635,36 +635,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7663483583886574577}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c48405a7c7d72da46964090d28972e9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f76130daa94fd74198431b47b5919ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDisplay: {fileID: 768574840586513233}
-  sentences:
-  - "Once upon a time, there was a magical realm with four kingdoms\u2026"
-  - 'You:  Hello? '
-  - "Unknown: Oh good you\u2019re awake! I wasn\u2019t sure how long the potion would
-    last."
-  - 'You: Potion? Who are you?'
-  - "Trimona: Oh right. I\u2019m Trimona, I\u2019m your personal guide! How much
-    do you remember of this world?"
-  - 'You: Not much at all. What is this world?'
-  - 'Trimona: Well to put it simply, you are the prince of Myphate. As a baby, you
-    were sent to Earth to live a regular childhood. But times are dire and we need
-    your help!'
-  - "You: I don\u2019t know anything about this world. Why would I help?"
-  - 'Trimona: The realm is in danger. The mighty Wren has stolen the four elements
-    of Myphate and is planning to take over! '
-  - 'Trimona: You are the only person who has the ability to possess the four elements.
-    Once you collect the four orbs from each kingdom, you will possess the power
-    to defeat him! '
-  - 'You: That sounds intense! How will I know what to do?'
-  - "Trimona: Luckily, you have me to help. I have been training my entire life to
-    be your guide, so I\u2019ll make sure I do a good job with that."
-  - 'You: Alright then, how do I get started?'
-  - 'Trimona: You need to take this  potion to unleash your full potential. It only
-    works on the true heir to the throne!'
-  typingSpeed: 0.03
-  dialogueBox: {fileID: 768574840094862174}
+  textDisplay: {fileID: 0}
+  sentences: []
+  typingSpeed: 0
+  dialogueBox: {fileID: 0}
   cam1: {fileID: 0}
   cam2: {fileID: 0}
-  continueButton: {fileID: 768574841037748068}
+  continueButton: {fileID: 0}

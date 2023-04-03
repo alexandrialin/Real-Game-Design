@@ -9,6 +9,8 @@ public class DatePuzzleManager : MonoBehaviour
 
     public GameObject wall;
 
+    public TextDisplay textDisplay;
+
     private int correctItems;
 
     public void CollectItem()
@@ -16,6 +18,7 @@ public class DatePuzzleManager : MonoBehaviour
         correctItems++;
         if (correctItems == 3)
         {
+            textDisplay.DisplayCustomText("You have collected all the items! You can now leave the room.");
             wall.SetActive(false);
         }
     }
