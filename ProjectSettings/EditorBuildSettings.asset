@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Love.unity
     guid: 8c36b0d97aeb8ad4997b42037e492e8f
+  - enabled: 1
+    path: Assets/Scenes/HubRestored.unity
+    guid: bd3ac41c81b181a4db76b98c56c259bb
   m_configObjects: {}

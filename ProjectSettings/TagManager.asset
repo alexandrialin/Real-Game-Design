@@ -13,6 +13,7 @@ TagManager:
   - Animal
   - love
   - courage
+  - restored
   layers:
   - Default
   - TransparentFX

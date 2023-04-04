@@ -18,7 +18,6 @@ public class McHp : MonoBehaviour
     public float lag = 0;
 
 
-
     void OnTriggerEnter(Collider other)
     {
 

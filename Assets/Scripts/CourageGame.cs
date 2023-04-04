@@ -24,6 +24,7 @@ public class CourageGame : MonoBehaviour
         enemies1 = 0;
         enemies2 = 0;  
         enemies3 = 0;
+        McHp.hp = McHp.full;
     }
     // Update is called once per frame
     void Update()

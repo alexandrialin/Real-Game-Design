@@ -60,6 +60,11 @@ public class Teleport : MonoBehaviour
                 {
                     SceneManager.LoadScene("Courage");
                 }
+                if(gameObject.CompareTag("restored"))
+                {
+                    SceneManager.LoadScene("HubRestored");
+                }
+         
             }
         }
         else
