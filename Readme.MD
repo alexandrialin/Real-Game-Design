@@ -6,14 +6,17 @@ No installation is needed. Simply open the build folder and run Love-Wisdom-Cour
 
 ## How to Play
 
-1. Click Play after the main menu loads to start (Quit and pause have not been implemented yet).
-2. Read Introduction Dialogue: The box can be clicked after text finishes typing out to get the next textbox. Currently, only the intro is prototyped, but in the full version, the dialogue feature is used to tell the story.
-3. Instruction Popup: The user is prompted with a popup that they can use WASD or key controls to move around as Rob. The camera will follow.
-4. Teleport to Dungeon: When the main character is within proximity to one of the doors (currently only the blue door works), a popup will appear. The user will be prompted to use "F" to teleport to the dungeon.
+1. Click Play after the main menu loads to start.
+2. Read Introduction Dialogue: The box can be clicked after text finishes typing out to get the next textbox.
+3. Instruction Popup: The user is prompted with a popup that they can use WASD or key controls to move around as Rob. The camera will follow. You can speak to the npc in the hub world
+4. Teleport to Dungeon: When the main character is within proximity to one of the doors, a popup will appear. The user will be prompted to use "F" to teleport to the dungeon.
 5. More Instructions: The user is prompted to use their mouse and click items on the walls to solve puzzles.
-6. Walk into objects in the love room to collect them.
-7. During the love quiz, click on the response that is correct.
-8. Click to attack for combat.
+6. Love Room: Walk into objects in the love room to collect them.
+7. Love Quiz: During the love quiz, click on the response that is correct.
+8. Courage Room: Click to attack for combat. User will defeat 3 small enemies, followed by 2 medium enemies and one large enemy. HP is on top of each of their head and attack numbers are displayed on top of those. Player HP is shown on bottom of the screen. If the player dies, they will be prompted by a screen where they can try again.
+9. Wisdom Room: Solve puzzles by clicking around.
+10. When all three dungeons are complete, a spinning key will appear in the hub world. When clicking F, the player will restore the hub world. The player can explore the castle freely and npc will have different dialogue.
+11. Player can click esc key to pull up pause menu. In dungeons, menu will redirect user to hub world/restored hub world depending on the state of the game. Otherwise, it will redirect user to the main menu.
 
 ## Puzzles
 
