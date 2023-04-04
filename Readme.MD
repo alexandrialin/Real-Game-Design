@@ -17,6 +17,7 @@ No installation is needed. Simply open the build folder and run Love-Wisdom-Cour
 9. Wisdom Room: Solve puzzles by clicking around.
 10. When all three dungeons are complete, a spinning key will appear in the hub world. When clicking F, the player will restore the hub world. The player can explore the castle freely and npc will have different dialogue.
 11. Player can click esc key to pull up pause menu. In dungeons, menu will redirect user to hub world/restored hub world depending on the state of the game. Otherwise, it will redirect user to the main menu.
+12. Small note: The button panels for the in game tutorials can be a little finicky. Click on the image on the panel if the button doesn't work.
 
 ## Puzzles
 
