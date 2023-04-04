@@ -9,6 +9,10 @@ TagManager:
   - wisdom
   - mc
   - Item
+  - body
+  - Animal
+  - love
+  - courage
   layers:
   - Default
   - TransparentFX

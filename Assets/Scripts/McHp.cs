@@ -10,7 +10,7 @@ public class McHp : MonoBehaviour
     // to make sure the squeals don't get too annoying
     public float squealCooldown;
     public float dmgCooldown = 0f;
-    public static int full = 200;
+    public static int full = 300;
     public static int hp = full;
     public Text hpText;
     public GameObject deathScreen;

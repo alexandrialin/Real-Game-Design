@@ -52,6 +52,14 @@ public class Teleport : MonoBehaviour
                 {
                     SceneManager.LoadScene("Wisdom");
                 }
+                if (gameObject.CompareTag("love"))
+                {
+                    SceneManager.LoadScene("Love");
+                }
+                if (gameObject.CompareTag("courage"))
+                {
+                    SceneManager.LoadScene("Courage");
+                }
             }
         }
         else

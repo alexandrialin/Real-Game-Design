@@ -19,7 +19,12 @@ public class CourageGame : MonoBehaviour
     {
         
     }
-
+    public static void ResetLevel()
+    {
+        enemies1 = 0;
+        enemies2 = 0;  
+        enemies3 = 0;
+    }
     // Update is called once per frame
     void Update()
     {

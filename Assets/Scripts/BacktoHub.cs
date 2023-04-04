@@ -9,6 +9,7 @@ public class BacktoHub : MonoBehaviour
     // Update is called once per frame
     public void TeleportHub()
     {
-        SceneManager.LoadScene("HubWorld");
+        CourageGame.ResetLevel();
+        SceneManager.LoadScene("Hub");
     }
 }
